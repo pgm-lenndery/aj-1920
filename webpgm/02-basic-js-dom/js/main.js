@@ -8,22 +8,22 @@
                 {
                     firstName: 'Kato',
                     lastName: 'Janssens',
-                    thumbnail: '../images/thumbnail.jpg',
+                    thumbnail: 'images/thumbnail.jpg',
                     owner: true,
                 }
             ],
-            thumbnail: '../images/01-marsman/marsman.jpg',
+            thumbnail: 'images/01-marsman/marsman.jpg',
             media: [
                 {
-                    src: '../images/01-marsman/3.mascotte.jpg',
+                    src: 'images/01-marsman/3.mascotte.jpg',
                     alt: 'mascotte',
                 },
                 {
-                    src: '../images/01-marsman/4.poster.jpg',
+                    src: 'images/01-marsman/4.poster.jpg',
                     alt: 'poster',
                 },
                 {
-                    src: '../images/01-marsman/5.poster.jpg',
+                    src: 'images/01-marsman/5.poster.jpg',
                     alt: 'poster',
                 },
             ],
@@ -63,22 +63,22 @@
                 {
                     firstName: 'Victor',
                     lastName: 'Gouhie',
-                    thumbnail: '../images/thumbnail.jpg',
+                    thumbnail: 'images/thumbnail.jpg',
                     owner: true,
                 }
             ],
-            thumbnail: '../images/02-cesar/2_detail_cesar.png',
+            thumbnail: 'images/02-cesar/2_detail_cesar.png',
             media: [
                 {
-                    src: '../images/02-cesar/1_detail_theelements.png',
+                    src: 'images/02-cesar/1_detail_theelements.png',
                     alt: 'elements',
                 },
                 {
-                    src: '../images/02-cesar/cesar.gif',
+                    src: 'images/02-cesar/cesar.gif',
                     alt: 'movement',
                 },
                 {
-                    src: '../images/02-cesar/6_detail_cesar.png',
+                    src: 'images/02-cesar/6_detail_cesar.png',
                     alt: 'details',
                 },
             ],
@@ -118,30 +118,30 @@
                 {
                     firstName: 'Pieter',
                     lastName: 'Vleminckx',
-                    thumbnail: '../images/thumbnail.jpg',
+                    thumbnail: 'images/thumbnail.jpg',
                     owner: true,
                 },
                 {
                     firstName: 'Jérôme',
                     lastName: 'Laroy',
-                    thumbnail: '../images/thumbnail.jpg',
+                    thumbnail: 'images/thumbnail.jpg',
                     owner: false,
                 },
                 {
                     firstName: 'Nick',
                     lastName: 'Boone',
-                    thumbnail: '../images/thumbnail.jpg',
+                    thumbnail: 'images/thumbnail.jpg',
                     owner: false,
                 },
             ],
-            thumbnail: '../images/03-snek/mockup-snekthemuseum.jpg',
+            thumbnail: 'images/03-snek/mockup-snekthemuseum.jpg',
             media: [
                 {
-                    src: '../images/03-snek/mockup-snekthemuseum.jpg',
+                    src: 'images/03-snek/mockup-snekthemuseum.jpg',
                     alt: 'mockup',
                 },
                 {
-                    src: '../images/03-snek/mockup-design.jpg',
+                    src: 'images/03-snek/mockup-design.jpg',
                     alt: 'mockup',
                 },
             ],
@@ -181,30 +181,30 @@
                 {
                     firstName: 'Jonas',
                     lastName: 'Dermul',
-                    thumbnail: '../images/thumbnail.jpg',
+                    thumbnail: 'images/thumbnail.jpg',
                     owner: true,
                 }
             ],
-            thumbnail: '../images/06-spacedweller/balk-logo2.png',
+            thumbnail: 'images/06-spacedweller/balk-logo2.png',
             media: [
                 {
-                    src: '../images/06-spacedweller/balk-logo.png',
+                    src: 'images/06-spacedweller/balk-logo.png',
                     alt: 'logo',
                 },
                 {
-                    src: '../images/06-spacedweller/balk-poster.png',
+                    src: 'images/06-spacedweller/balk-poster.png',
                     alt: 'poster',
                 },
                 {
-                    src: '../images/06-spacedweller/balk-visual-poster.png',
+                    src: 'images/06-spacedweller/balk-visual-poster.png',
                     alt: 'visual poster',
                 },
                 {
-                    src: '../images/06-spacedweller/balk-buswrap.png',
+                    src: 'images/06-spacedweller/balk-buswrap.png',
                     alt: 'logo',
                 },
                 {
-                    src: '../images/06-spacedweller/balk-visual-buswrap.png',
+                    src: 'images/06-spacedweller/balk-visual-buswrap.png',
                     alt: 'poster',
                 },
             ],
@@ -244,42 +244,42 @@
                 {
                     firstName: 'Bert',
                     lastName: 'Goossens',
-                    thumbnail: '../images/thumbnail.jpg',
+                    thumbnail: 'images/thumbnail.jpg',
                     owner: true,
                 }
             ],
-            thumbnail: '../images/05-trash/thumbnail.png',
+            thumbnail: 'images/05-trash/thumbnail.png',
             media: [
                 {
-                    src: '../images/05-trash/1_moodboard.png',
+                    src: 'images/05-trash/1_moodboard.png',
                     alt: 'moodboard',
                 },
                 {
-                    src: '../images/05-trash/2_detail_ideaboard.png',
+                    src: 'images/05-trash/2_detail_ideaboard.png',
                     alt: 'moodboard',
                 },
                 {
-                    src: '../images/05-trash/3_detail_wireframe.png',
+                    src: 'images/05-trash/3_detail_wireframe.png',
                     alt: 'wireframe',
                 },
                 {
-                    src: '../images/05-trash/4_detail_screendesign.png',
+                    src: 'images/05-trash/4_detail_screendesign.png',
                     alt: 'screendesign',
                 },
                 {
-                    src: '../images/05-trash/5_detail_screendesign.png',
+                    src: 'images/05-trash/5_detail_screendesign.png',
                     alt: 'screendesign',
                 },
                 {
-                    src: '../images/05-trash/6_detail_screendesign.png',
+                    src: 'images/05-trash/6_detail_screendesign.png',
                     alt: 'screendesign',
                 },
                 {
-                    src: '../images/05-trash/7_detail_screendesign.png',
+                    src: 'images/05-trash/7_detail_screendesign.png',
                     alt: 'screendesign',
                 },
                 {
-                    src: '../images/05-trash/8_detail_screendesign.png',
+                    src: 'images/05-trash/8_detail_screendesign.png',
                     alt: 'screendesign',
                 },
             ],
@@ -319,22 +319,22 @@
                 {
                     firstName: 'Stijn',
                     lastName: 'Gevens',
-                    thumbnail: '../images/thumbnail.jpg',
+                    thumbnail: 'images/thumbnail.jpg',
                     owner: true,
                 }
             ],
-            thumbnail: '../images/04-diabeasy/thumb_400x400.png',
+            thumbnail: 'images/04-diabeasy/thumb_400x400.png',
             media: [
                 {
-                    src: '../images/04-diabeasy/ontwerp-website.png',
+                    src: 'images/04-diabeasy/ontwerp-website.png',
                     alt: 'design website',
                 },
                 {
-                    src: '../images/04-diabeasy/wireflow-smartphone.jpg',
+                    src: 'images/04-diabeasy/wireflow-smartphone.jpg',
                     alt: 'wireflow smartphone',
                 },
                 {
-                    src: '../images/04-diabeasy/wireflow-smartwatch.jpg',
+                    src: 'images/04-diabeasy/wireflow-smartwatch.jpg',
                     alt: 'wireflow smartwatch',
                 },
             ],
