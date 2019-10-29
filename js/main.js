@@ -49,7 +49,7 @@
             let tempStr = '';
             projects.forEach((course) => {
                 tempStr += `
-                    <h3 class="course-title" id="${course.title.replace(' ', '').toLowerCase()}">${course.title}</h3>
+                    <h2 class="course-title" id="${course.title.replace(' ', '').toLowerCase()}">${course.title}</h2>
                     <hr>
                     ${this.generateProjects(course.projects)}
                 `
@@ -61,15 +61,15 @@
 
         generateProjects(projectsArray) {
             let tempStr = '';
-            projectsArray.forEach((project) => {
+            projectsArray.forEach((project, index) => {
                 tempStr += `
-                    <article>
+                    <article data-id="${index}">
                     <div>
-                        <h3>${project.title}</h3>
+                        <h3>${++index} – ${project.title}</h3>
                         <p>${project.descr}</p>
                     </div>
                     <div>
-                        <a href="https://git.ahs.lennertderyck.be/aj-1920/${project.href}" target="_blank">Bezoeken</a>
+                        <a class="project-url" href="https://git.ahs.lennertderyck.be/aj-1920/${project.href}" target="_blank">Bezoeken</a>
                     </div>
                     </article>
                 `
