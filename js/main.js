@@ -3,15 +3,20 @@
         {
             title: 'Web Design',
             projects:[ 
-                {
-                    title: 'Thrive',
-                    descr: 'Promotiepagina voor een app om te leren werken met flexbox',
-                    href: '/webdes/02-thrive'
-                },
-                {
+                 {
                     title: 'Joboffer',
                     descr: 'Een ludieker manier om te leren werken met css',
                     href: '/webdes/01-joboffer'
+                },
+                {
+                    title: 'Thriven',
+                    descr: 'Promotiepagina voor een app om te leren werken met flexbox',
+                    href: '/webdes/02-thrive'
+                },
+               {
+                    title: 'Thriven 2',
+                    descr: 'Verdere uitwerking van opdracht 2',
+                    href: '/webdes/03-thriven'
                 },
             ]
         },
