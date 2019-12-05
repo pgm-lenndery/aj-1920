@@ -34,7 +34,18 @@
                     href: '/webpgm/02-basic-js-dom'
                 },
             ]
+        },
+        {
+            title: 'UI / UX',
+            projects:[ 
+                {
+                    title: 'Curriculum vitae',
+                    descr: 'Gebruik leren maken van Adobe XD en uitvoeren in HTML & CSS',
+                    href: '/uiux/01-cv'
+                },
+            ]
         }
+
     ]
 
     const app = {
@@ -69,13 +80,13 @@
             projectsArray.forEach((project, index) => {
                 tempStr += `
                     <article data-id="${index}">
-                    <div>
-                        <h3>${++index} – ${project.title}</h3>
-                        <p>${project.descr}</p>
-                    </div>
-                    <div>
-                        <a class="project-url" href="https://git.ahs.lennertderyck.be/aj-1920/${project.href}" target="_blank">Bezoeken</a>
-                    </div>
+                        <div>
+                            <h3>${++index} – ${project.title}</h3>
+                            <p>${project.descr}</p>
+                        </div>
+                        <div>
+                            <a class="project-url" href="./aj-1920${project.href}" target="_blank">Bezoeken</a>
+                        </div>
                     </article>
                 `
             });

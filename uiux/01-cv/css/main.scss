@@ -1,0 +1,380 @@
+:root {
+    --font-main: 'Overpass', sans-serif;
+    --font-scnd: 'Oswald', sans-serif;
+
+    --accent-1: #F0F0F0;
+    --accent-2: #BABABA;
+    --accent-3: #939393;
+    --accent-4: #575757;
+    --accent-5: #464646;
+
+    --border-radius-lg: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    transition: all .2s ease-in-out;
+    font-family: var(--font-main);
+}
+
+*:hover, *::after, *::before {
+    transition: all .3s ease-in-out;
+}
+
+body {
+    position: relative;
+    padding: 150px 0;
+}
+
+a {
+    color: unset;
+}
+
+img {
+    user-select: none;
+    pointer-events: none;
+    user-drag: none;
+}
+
+[data-ce-grid] .container {
+    max-width: 1100px;
+}
+
+.row {
+    .row {
+        margin: unset;
+    }
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+.txt-modern {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.txt-modern-sm {
+    font-family: var(--font-main);
+    font-weight: bold;
+    @extend .txt-modern;
+}
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-family: var(--font-scnd);
+        font-weight: 400;
+        color: var(--accent-4);
+
+        @extend .txt-modern;
+    }
+}
+
+h2 {
+    font-size: 2.2em;
+    letter-spacing: 4px !important;
+}
+
+h3 {
+    font-size: 22px;
+    color: var(--accent-4);
+
+    &.section-title {
+        margin-bottom: 10px;
+    }
+}
+
+p {
+    color: var(--accent-4);
+}
+
+hr {
+    position: relative;
+    margin: 40px 0;
+    border: 0;
+    border-top: 1.5px solid var(--accent-2);
+
+    &::after {
+        content: 'hello';
+        position: absolute;
+        display: block;
+        left: 30px;
+        top: 0px;
+        height: 80px;
+        width: 80px;
+        border: 2px solid black;
+    }
+}
+
+///////////////////////////////////////////////
+.d-block {display: block;}
+
+// FLEXBOX
+.d-flex {display: flex;}
+.flex-row {flex-direction: row;}
+.align-items-center {align-items: center;}
+.justify-content-between {justify-content: space-between;}
+
+///////////////////////////////////////////////
+
+.avatar {
+    position: relative;
+    width: fit-content;
+    img {
+        border-radius: 100%;
+
+        &:nth-child(2) {
+            position: absolute;
+            top: calc(50% - (80px/2));
+            right: -35px;
+        }
+    }
+}
+
+section {
+    &[data-label="hero"] {
+        margin-bottom: 170px;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        &> .row > [class*="col"]:nth-child(2) {
+            // height: 100px;
+            // width: 1px;
+            margin-left: 10px;
+            padding-left: 67.656px;
+            border-left: 2px solid var(--accent-2);
+
+            span.arrow {
+                left: -5px;
+                transform: rotate(90deg);
+                top: calc(50% - (var(--arrow-size)/2));
+            }
+        }
+    }
+
+    &[data-label="skills"] {
+        --gutter: 45px;
+        --space: 100px;
+
+        margin-left: calc(var(--space) * -1);
+        margin-right: calc(var(--space) * -1);
+        margin-bottom: calc(var(--space) * -1);
+        padding: var(--space);
+        background-color: var(--accent-1);
+        border-radius: var(--border-radius-lg);
+
+        * {
+            color: var(--accent-5);
+        }
+
+        .row {
+            h2 {margin-bottom: 10px;}
+            // h4 {margin-bottom: 10px;}
+        }
+
+        &> .row {
+            &:nth-child(2) {
+                margin-bottom: calc((var(--space)/10) * 4);
+            }
+
+            .row {
+                margin-bottom: 16px;
+            }
+        }
+
+        .skill-level {
+            width: 300px;
+            min-height: 10px;
+            border-radius: 120px;
+            background-color: var(--skill-tag-bg-color);
+            border: 8px solid var(--skill-tag-bg-color);
+
+            .skill-level-percent {
+                width: var(--skill-level);
+                height: 11px; 
+                border-radius: 120px;
+                background-color: var(--skill-tag-main-color);
+            }
+        }
+
+        [data-skill="indesign"] {
+            --skill-tag-main-color: #ED679F;
+            --skill-tag-bg-color: #2E0712;
+            --skill-level: 75%;
+        }
+
+        [data-skill="illustrator"] {
+            --skill-tag-main-color: #E78A32;
+            --skill-tag-bg-color: #301A04;
+            --skill-level: 85%;
+        }
+
+        [data-skill="photoshop"] {
+            --skill-tag-main-color: #63D3FC;
+            --skill-tag-bg-color: #0E2731;
+            --skill-level: 50%;
+        }
+
+        [data-skill="htmlcss"] {
+            --skill-tag-main-color: #FF5A00;
+            --skill-tag-bg-color: #5C1600;
+            --skill-level: 75%;
+        }
+
+        [data-skill="javascript"] {
+            --skill-tag-main-color: #FFBA00;
+            --skill-tag-bg-color: #533D02;
+            --skill-level: 40%;
+        }
+    }
+
+    &[data-label="skills-about"] {
+        --space: 45px;
+
+        position: relative;
+        margin-left: calc(var(--space) * -1);
+        margin-right: calc(var(--space) * -1);
+        padding: var(--space);
+        background-color: var(--accent-3);
+        border-radius: var(--border-radius-lg);
+
+        * {
+            color: white;
+        }
+
+        svg.feather {
+            --d: 30px;
+
+            stroke-width: 1.5px;
+            height: var(--d);
+            width: var(--d);
+        }
+    }
+
+    &[data-label="opleidingen"] {
+        &> .row {
+            text-align: center;
+
+            [class*="col-"] {
+                position: relative;
+
+                h3 {
+                    line-height: 22px;
+                    font-size: 18px;
+                }
+    
+                p {
+                    font-size: 75%;
+                    margin-bottom: 0;
+                }
+    
+                small {
+                    margin-top: -2px;
+                    font-size: 70%;
+                }
+    
+                p, small {
+                    color: var(--accent-3);
+                }
+
+                span.arrow {
+                    bottom: -21px;
+                    z-index: 1000;
+                }
+            }
+
+        }
+
+        hr {
+            margin-top: 20px;
+        }
+    }
+}
+
+span.arrow-filled {
+    --arrow-size: 13px;
+    display: block;
+    position: absolute;
+    left: calc(50% - (var(--arrow-size)));
+    top: 0px;
+    width: 0;
+    bottom: -9px;
+    height: 0;
+    border-bottom: var(--arrow-size) solid var(--accent-1);
+    border-left: var(--arrow-size) solid transparent;
+    border-right: var(--arrow-size) solid transparent;
+    font-size: 0;
+    line-height: 0;
+    transform: rotate(180deg);
+
+    &::after {
+        top: 1px;
+        position: absolute;
+        content: '';
+        // border-bottom: 8px solid #fff;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        left: -8px;
+    }
+}
+
+span.arrow {
+    --arrow-size: 10px;
+    /* display: block;
+    position: absolute;
+    left: calc(50% - (var(--arrow-size)));
+    top: 0px;
+    width: 0;
+    bottom: -9px;
+    height: 0;
+    border-bottom: var(--arrow-size) solid transparent;
+    border-left: var(--arrow-size) solid transparent;
+    border-right: var(--arrow-size) solid transparent;
+    font-size: 0;
+    line-height: 0;
+    transform: rotate(180deg); */
+
+    border-bottom: var(--arrow-size) solid var(--accent-2);
+    border-left: var(--arrow-size) solid transparent;
+    border-right: var(--arrow-size) solid transparent;
+    bottom: -9px;
+    display: block;
+    font-size: 0;
+    height: 0;
+    left: calc(50% - var(--arrow-size));
+    line-height: 0;
+    position: absolute;
+    width: 0;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: -10px;
+        top: 2.5px;
+        border-bottom: 10px solid #fff;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+    }
+}
+
+img.corner-element {
+    &.corner-top {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 560px;
+    }
+
+    &.corner-bottom {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 700px;
+    }
+}
