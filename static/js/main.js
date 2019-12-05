@@ -85,7 +85,7 @@
                             <p>${project.descr}</p>
                         </div>
                         <div>
-                            <a class="project-url" href="./aj-1920${project.href}" target="_blank">Bezoeken</a>
+                            <a class="project-url" href=".${project.href}" target="_blank">Bezoeken</a>
                         </div>
                     </article>
                 `
