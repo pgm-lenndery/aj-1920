@@ -138,11 +138,30 @@ section[data-label="404-msg"] {
 }
 
 section[data-label="404-msg"] p {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 section[data-label="404-msg"] .msg-gif {
   width: 80%;
   margin: 0 auto;
+}
+
+section[data-label="404-msg"] a {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+section[data-label="404-msg"] a small {
+  font-weight: bold;
+}
+
+section[data-label="404-msg"] a::after {
+  height: 2px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -130,11 +130,28 @@ section[data-label="404-msg"] {
     text-align: center;
 
     p {
-        margin-bottom: 40px;
+        margin-bottom: 25px;
     }
 
     .msg-gif {
         width: 80%;
         margin: 0 auto
+    }
+
+    a {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: fit-content;
+        text-align: center;
+
+        small {
+            font-weight: bold;
+        }
+
+        &::after {
+            height: 2px;
+        }
     }
 }
