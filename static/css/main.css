@@ -131,4 +131,18 @@ main article {
 main article > div:nth-child(1) {
   margin-right: 35px;
 }
+
+section[data-label="404-msg"] {
+  margin-top: 70px;
+  text-align: center;
+}
+
+section[data-label="404-msg"] p {
+  margin-bottom: 40px;
+}
+
+section[data-label="404-msg"] .msg-gif {
+  width: 80%;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=main.css.map */
