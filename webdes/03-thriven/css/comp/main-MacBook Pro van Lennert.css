@@ -160,10 +160,14 @@ header .container nav, header main nav {
           box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.39);
   -webkit-box-shadow: 0px 7px 49px 0px rgba(0, 0, 0, 0.329);
           box-shadow: 0px 7px 49px 0px rgba(0, 0, 0, 0.329);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: showMenu .2s normal;
+          animation: showMenu .2s normal;
 }
 
 header .container nav ul, header main nav ul {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 header .container nav ul li, header main nav ul li {
@@ -185,7 +189,6 @@ header .container nav ul li a:not(.btn), header main nav ul li a:not(.btn) {
 
 header .container nav ul li:last-child, header main nav ul li:last-child {
   margin-bottom: 0;
-  margin-top: 20px;
 }
 
 header .container nav ul li h3, header main nav ul li h3 {
@@ -206,6 +209,7 @@ header .container nav ul:hover li a:not(.btn):hover, header main nav ul:hover li
 }
 
 header.show #btnCollapse::before {
+  display: none;
   content: ' ';
   position: absolute;
   top: 44px;
@@ -238,6 +242,8 @@ header.show nav {
   max-width: unset;
   width: 100%;
   height: unset;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 main {
@@ -290,30 +296,53 @@ main section.cards {
 }
 
 main section.cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-preferred-size: 30% !important;
       flex-basis: 30% !important;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin-bottom: 30px;
   border-radius: 3px;
-  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.11);
+          box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.11);
 }
 
-main section.cards .card img {
-  width: 100%;
+main section.cards .card .wrapper {
+  position: relative;
+}
+
+main section.cards .card .wrapper display img {
+  width: 60%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: -4px;
+  margin: 30px 0px 15px 0px;
+  border-radius: 100%;
 }
 
-main section.cards .card h2 {
+main section.cards .card .wrapper .tag {
+  position: absolute;
+}
+
+main section.cards .card h2, main section.cards .card h3 {
   width: 100%;
-  padding: 10px;
-  background: var(--accent-1);
-  color: white;
+  padding: 20px;
+  color: var(--accent-1);
+  background: white;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
   header.show nav {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: absolute;
     /* bottom: 0px; */
     right: 0px;
@@ -324,5 +353,84 @@ main section.cards .card h2 {
     height: -moz-fit-content;
     height: fit-content;
   }
+  header.show nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  header.show nav ul li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-bottom: 15px;
+  }
 }
-/*# sourceMappingURL=main.css.map */
+
+@-webkit-keyframes showMenu {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes showMenu {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes hideMenu {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 0;
+  }
+}
+
+@keyframes hideMenu {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=main-MacBook Pro van Lennert.css.map */

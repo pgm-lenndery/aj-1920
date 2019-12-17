@@ -44,12 +44,30 @@
                     href: '/uiux/01-cv'
                 },
             ]
+        },
+        {
+            title: '@WORK',
+            projects:[ 
+                {
+                    title: 'Case 1 Arne Quinze',
+                    descr: 'Het namaken van arnequinze.com',
+                    href: '/at-work/01-case-1'
+                },
+                {
+                    title: 'Case 2 Matthias Talloen',
+                    descr: 'Het namaken van https://matthiastalloen.be/',
+                    href: '/at-work/02-case-2'
+                },
+            ]
         }
 
     ]
 
     const app = {
         initialize() {
+            console.log('\n' + `%cmain.js ${arguments.callee.name}() running! \n` + ' ', 'color: #00d400; font-weight: bold');
+            console.log(`%c${arguments.callee.name}() ran`, 'font-weight: bold');
+
             const tofill = document.getElementById('projects');
             this.body = document.querySelector('body');
             this.nav = document.querySelector('#nav');
@@ -76,6 +94,8 @@
         },
 
         generateProjects(projectsArray) {
+            console.log(`%c${arguments.callee.name}() ran`, 'font-weight: bold');
+
             let tempStr = '';
             projectsArray.forEach((project, index) => {
                 tempStr += `
@@ -85,12 +105,16 @@
                             <p>${project.descr}</p>
                         </div>
                         <div>
-                            <a class="project-url" href=".${project.href}" target="_blank">Bezoeken</a>
+                            <a class="project-url" href=".${project.href}" data-collapse-trigger="collapseProjectFrame" target="projectFrame">Bezoeken</a>
                         </div>
                     </article>
                 `
             });
             return tempStr;
+        },
+
+        generateProjectFrame(input) {
+            console.log(`frame should be showed`)
         }
     }
 
