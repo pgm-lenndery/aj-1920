@@ -214,6 +214,7 @@ section[data-label="404-msg"] a::after {
   background: #eee;
   cursor: url(../images/x.svg) 4 20, auto !important;
   z-index: 100000;
+  opacity: 0.6;
 }
 
 [data-collapse-target='collapseProjectFrame'] .close-frame span {
@@ -223,5 +224,9 @@ section[data-label="404-msg"] a::after {
   font-weight: bold;
   text-align: center;
   padding: 20px;
+}
+
+[data-collapse-target='collapseProjectFrame'] .close-frame:hover {
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */

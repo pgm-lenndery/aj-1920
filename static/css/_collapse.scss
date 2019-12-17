@@ -38,6 +38,7 @@
         background: #eee;
         cursor: url(../images/x.svg) 4 20, auto !important;
         z-index: 100000;
+        opacity: 0.6;
 
         span {
             display: block;
@@ -46,6 +47,10 @@
             font-weight: bold;
             text-align: center;
             padding: 20px;
+        }
+
+        &:hover {
+            opacity: 1;
         }
     }
 }
