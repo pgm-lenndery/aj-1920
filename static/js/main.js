@@ -51,7 +51,7 @@
                 {
                     title: 'Case 1 Arne Quinze',
                     descr: 'Het namaken van arnequinze.com',
-                    href: '/at-work/01-case-1'
+                    href: '/at-work/01-case-1/index.html'
                 },
                 {
                     title: 'Case 2 Matthias Talloen',
