@@ -7,10 +7,10 @@
     padding: 0px;
     scroll-behavior: smooth;
     font-family: var(--font-main);
-    cursor: url(../images/mouse-pointer.svg) 4 0, auto;
+    cursor: url(../images/cursor/mouse-pointer.svg) 4 0, auto;
 }
 
-*, *::after, *:hover {
+*::after, *:hover {
     transition: all .3s ease-in-out;
 }
 
@@ -91,7 +91,7 @@ main {
         a {
             margin-right: 26px;
             white-space: nowrap;
-            cursor: url(../images/arrow-down.svg) 4 0, auto;
+            cursor: url(../images/cursor/arrow-down.svg) 4 0, auto;
         }
     }
 
@@ -126,7 +126,7 @@ main {
         }
 
         a {
-            cursor: url(../images/eye.svg) 4 0, auto;
+            cursor: url(../images/cursor/eye.svg) 4 0, auto;
         }
     }
 }
@@ -164,20 +164,38 @@ section[data-label="404-msg"] {
 }
 
 @media (prefers-color-scheme: dark) {
+    * {
+        cursor: url(../images/cursor/light/mouse-pointer.svg) 4 0, auto;
+    }
+    
     body {
       filter: invert(1);
       background: #252525;
     }
+
+    main {    
+        nav {
+            a {
+                cursor: url(../images/cursor/light/arrow-down.svg) 4 0, auto;
+            }
+        }
+
+        article {
+            a {
+                cursor: url(../images/cursor/light/eye.svg) 4 0, auto;
+            }
+        }
+    }
 }
   
-  @media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) {
     body {
       filter: unset;
       background: white;
     }
 }
   
-  @media (prefers-color-scheme: no-preference) {
+@media (prefers-color-scheme: no-preference) {
     body {
       filter: unset;
       background: white;
