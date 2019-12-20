@@ -186,6 +186,10 @@ section[data-label="404-msg"] {
             }
         }
     }
+
+    [data-collapse-target='collapseProjectFrame'] {
+        filter: invert(1);
+    }
 }
   
 @media (prefers-color-scheme: light) {
