@@ -172,6 +172,30 @@ section[data-label="404-msg"] a::after {
   height: 2px;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+    background: #252525;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    -webkit-filter: unset;
+            filter: unset;
+    background: white;
+  }
+}
+
+@media (prefers-color-scheme: no-preference) {
+  body {
+    -webkit-filter: unset;
+            filter: unset;
+    background: white;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
