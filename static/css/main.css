@@ -57,7 +57,6 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 30px 0px;
 }
 
 header a {
@@ -76,12 +75,6 @@ header small {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-}
-
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0px 30px;
 }
 
 main nav {
@@ -139,6 +132,12 @@ main article a {
   cursor: url(../images/cursor/eye.svg) 4 0, auto;
 }
 
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0px 30px;
+}
+
 section[data-label="404-msg"] {
   margin-top: 70px;
   text-align: center;
@@ -188,6 +187,10 @@ section[data-label="404-msg"] a::after {
     cursor: url(../images/cursor/light/eye.svg) 4 0, auto;
   }
   [data-collapse-target='collapseProjectFrame'] {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
+  img {
     -webkit-filter: invert(1);
             filter: invert(1);
   }

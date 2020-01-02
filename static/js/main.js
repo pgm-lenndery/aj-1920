@@ -40,7 +40,7 @@
             projects:[ 
                 {
                     title: 'Curriculum vitae',
-                    descr: 'Gebruik leren maken van Adobe XD en uitvoeren in HTML & CSS',
+                    descr: 'Leren gebruik maken van Adobe XD en uitvoeren in HTML & CSS',
                     href: '/uiux/01-cv'
                 },
             ]
