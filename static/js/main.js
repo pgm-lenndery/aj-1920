@@ -43,6 +43,11 @@
                     descr: 'Leren gebruik maken van Adobe XD en uitvoeren in HTML & CSS',
                     href: '/uiux/01-cv'
                 },
+                {
+                    title: 'Paralax',
+                    descr: 'Gebruik maken van Javascript om paralax effect toe te voegen',
+                    href: '/uiux/02-paralax'
+                },
             ]
         },
         {
