@@ -110,7 +110,7 @@
                             <p>${project.descr}</p>
                         </div>
                         <div>
-                            <a class="project-url" href=".${project.href}" data-collapse-trigger="collapseProjectFrame" target="projectFrame">Bezoeken</a>
+                            <a class="project-url" href=".${project.href}" target="_blank">Bezoeken</a>
                         </div>
                     </article>
                 `
