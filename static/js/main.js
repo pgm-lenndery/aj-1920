@@ -46,7 +46,7 @@
                 {
                     title: 'Paralax',
                     descr: 'Gebruik maken van Javascript om paralax effect toe te voegen',
-                    href: '/uiux/02-paralax'
+                    href: '/uiux/03-paralax'
                 },
             ]
         },
