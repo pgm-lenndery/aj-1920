@@ -1,0 +1,60 @@
+$accent1: #8C6535;
+$accent2: #937D5E;
+$accent3: #AD8554;
+$accent4: #D9C58B;
+
+$fontMain: 'Anglecia Pro Text';
+$fontScnd: 'Eina 02';
+$bdRadius: 3px;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    transition: all .1s ease;
+    scroll-behavior: smooth;
+    cursor: url('../cursor.svg') 4 0, auto;
+}
+
+body {
+    padding: 0 0 35px 0;
+    background-color: black;
+    font-family: $fontMain;
+    background-image: url(../images/background_gradient_btm.svg);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 0 25px;
+
+    &.xl {
+        max-width: 900px;
+    }
+}
+
+.btn {
+    display: block;
+    width: fit-content;
+    color: $accent1;
+    font-family: $fontMain;
+    padding: 7px;
+    border: 1px solid $accent1;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+    cursor: url('../cursor_selected.svg') 4 0, auto;
+}
+
+video {
+    cursor: url('../cursor_selected.svg') 4 0, auto;
+}
+////////////////////////////////////////////////////////////////

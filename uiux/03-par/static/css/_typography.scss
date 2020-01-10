@@ -1,0 +1,63 @@
+.text-modern {
+    text-transform: uppercase;
+    font-family: $fontScnd;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+////////////////////////////////////////////////////////////////
+
+h2 {
+    font-size: 2.7rem;
+    color: $accent1;
+    font-weight: 400;
+}
+
+h3 {
+    // font-size: 2.2rem;
+    color: $accent1;
+    font-weight: 400;
+}
+
+h4 {
+    color: $accent1;
+    font-weight: 400;
+}
+
+p {
+    margin-top: 15px;
+    font-family: $fontScnd;
+    color: $accent1;
+    font-weight: normal;
+    line-height: 25px;
+    letter-spacing: .5px;
+}
+
+nav {
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        color: $accent1;
+        @extend .text-modern;
+        font-size: 87%;
+
+        li {
+            display: inline-block;
+            // margin-right: 50px;
+            width: calc(100%/5);
+            text-align: right;
+            text-align: center;
+            
+        }
+
+        /* li:nth-child(3) {
+            max-width: fit-content;
+            margin: 0 40px;
+        }
+
+        li:nth-child(3) ~ li {
+            text-align: left;
+        } */
+    }
+}

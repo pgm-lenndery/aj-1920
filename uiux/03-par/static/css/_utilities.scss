@@ -1,0 +1,14 @@
+.bg-gradient {
+    background: url('../images/background_gradient.svg');
+}
+
+.no-save {
+    pointer-events: none !important;
+	user-select: none !important;
+	// user-drag: none!important;
+}
+
+.w-100 {width: 100%}
+
+.text-center {text-align: center}
+.font-scnd {font-family: $fontScnd;}
