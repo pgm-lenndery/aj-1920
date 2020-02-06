@@ -63,11 +63,6 @@
                     descr: 'Het namaken van https://matthiastalloen.be/',
                     href: '/at-work/02-case-2'
                 },
-                {
-                    title: 'Case 3 Matthias Talloen',
-                    descr: 'Het namaken van https://matthiastalloen.be/',
-                    href: '/at-work/02-case-3'
-                },
             ]
         }
 
