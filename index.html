@@ -11,30 +11,33 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://lennertderyck.be/assets/images/LOGO_LDR_ZWART.ico">
 </head>
 <body>
-    <header class="container">
-        <small>Lennert De Ryck</small>
-        <small>
-            <a href="https://github.com/pgm-lenndery" target="_blank">GITHUB</a>
-            <a href="https://www.linkedin.com/in/lennert-d-b43737193/" target="_blank">LINKEDIN</a>
-            <a href="https://unsplash.com/@lennertderyck" target="_blank">UNSPLASH</a>
-        </small>
-    </header>
-    <main class="container"> 
-        <h1>Projecten</h1>
-        <nav id="nav"></nav>
-        <div id="projects">
-            Er was een probleem bij het laden van de projecten. Probeer later opnieuw. <br>
-            :(
-        </div>
-        <section data-collapse-target="collapseProjectFrame">
-            <iframe frameborder="0" name="projectFrame"></iframe>
-            <div class="close-frame" data-collapse-trigger="collapseProjectFrame">
-                <span>
-                    sluiten
-                </span>
+    <div id="content">
+        <header class="container">
+            <small>Lennert De Ryck</small>
+            <small>
+                <a href="https://github.com/pgm-lenndery" target="_blank">GITHUB</a>
+                <a href="https://www.linkedin.com/in/lennert-d-b43737193/" target="_blank">LINKEDIN</a>
+                <a href="https://unsplash.com/@lennertderyck" target="_blank">UNSPLASH</a>
+            </small>
+        </header>
+        <main class="container"> 
+            <h1>Projecten</h1>
+            <nav id="nav"></nav>
+            <div id="projects">
+                Er was een probleem bij het laden van de projecten. Probeer later opnieuw. <br>
+                :(
             </div>
-        </section>
-    </main>
+        </main>
+        <footer class="container"><small class="text-modern">Lennert De Ryck <span data-replace="currentYear"></span></small></footer>
+    </div>
+    <div id="test" data-collapse-target="collapseProjectFrame">
+        <iframe src="https://lennertderyck.be" name="projectFrame" frameborder="0"></iframe>
+        <div class="close-frame" data-collapse-trigger="collapseProjectFrame">
+            <span>
+                sluiten
+            </span>
+        </div>
+    </div>
     <script src="./static/js/main.js"></script>
     <script src="./static/js/collapse.js"></script>
 </body>

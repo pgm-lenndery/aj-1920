@@ -96,6 +96,8 @@
 
             tofill.innerHTML = tempStr;
             nav.innerHTML = menuStr;
+
+            replaceElement('currentYear', new Date().getFullYear())
         },
 
         generateProjects(projectsArray) {
@@ -110,7 +112,7 @@
                             <p>${project.descr}</p>
                         </div>
                         <div>
-                            <a class="project-url" href=".${project.href}" target="_blank">Bezoeken</a>
+                            <a class="project-url" href=".${project.href}" data-collapse-trigger="collapseProjectFrame" target="projectFrame">Bezoeken</a>
                         </div>
                     </article>
                 `
@@ -125,3 +127,17 @@
 
     app.initialize(); // Initialize app – execute
 })()
+
+function replaceElement(element, content) {
+    element = document.querySelectorAll(`[data-replace="${element}"]`);
+    element.forEach((el) => {
+        el.outerHTML = content;
+    })
+}
+
+function fillElement(element, content) {
+    element = document.querySelectorAll(`[data-fill="${element}"]`);
+    element.forEach((el) => {
+        el.innerHTML = content;
+    })
+}

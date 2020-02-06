@@ -15,7 +15,13 @@
 }
 
 body {
-    // margin: 30px 0px;
+    width: 100vw;
+    height: 100vh;
+
+    #content {
+        overflow: scroll;
+        height: 100%;
+    }
 }
 
 a {
@@ -118,6 +124,9 @@ main {
 
         & > div:nth-child(1) {
             margin-right: 35px;
+            hyphens: auto;
+            overflow-wrap: break-word;
+            word-break: break-word;
         }
 
         a {
@@ -130,6 +139,18 @@ main {
     max-width: 900px;
     margin: 30px auto;
     padding: 0px 30px;
+}
+
+.text-modern {
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    width: fit-content;
+}
+
+iframe {
+    background: white;
+    z-index: 10;
 }
 
 // 404 ERROR MSG //////////////////////////////////////////////
