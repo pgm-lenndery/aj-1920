@@ -6,17 +6,17 @@
                  {
                     title: 'Joboffer',
                     descr: 'Een ludieker manier om te leren werken met css',
-                    href: '/webdes/01-joboffer'
+                    href: './webdes/01-joboffer'
                 },
                 {
                     title: 'Thriven',
                     descr: 'Promotiepagina voor een app om te leren werken met flexbox',
-                    href: '/webdes/02-thrive'
+                    href: './webdes/02-thrive'
                 },
                {
                     title: 'Thriven 2',
                     descr: 'Verdere uitwerking van opdracht 2',
-                    href: '/webdes/03-thriven'
+                    href: './webdes/03-thriven'
                 },
             ]
         },
@@ -26,12 +26,12 @@
                 {
                     title: 'Festival',
                     descr: 'Een literal object uitlezen en weergeven in DOM',
-                    href: '/webpgm/01-festival'
+                    href: './webpgm/01-festival'
                 },
                 {
                     title: 'Basic JS met DOM',
                     descr: 'Een literal object uitlezen en weergeven in DOM en details laden in overlay',
-                    href: '/webpgm/02-basic-js-dom'
+                    href: './webpgm/02-basic-js-dom'
                 },
             ]
         },
@@ -41,12 +41,12 @@
                 {
                     title: 'Curriculum vitae',
                     descr: 'Leren gebruik maken van Adobe XD en uitvoeren in HTML & CSS',
-                    href: '/uiux/01-cv'
+                    href: './uiux/01-cv'
                 },
                 {
                     title: 'Paralax',
                     descr: 'Gebruik maken van Javascript om paralax effect toe te voegen',
-                    href: '/uiux/03-paralax'
+                    href: './uiux/03-paralax'
                 },
             ]
         },
@@ -56,7 +56,7 @@
                 {
                     title: 'Case 1 Arne Quinze',
                     descr: 'Het namaken van arnequinze.com',
-                    href: '/at-work/01-case-1/index.html'
+                    href: '/at-work/01-case-1'
                 },
                 {
                     title: 'Case 2 Matthias Talloen',
@@ -112,7 +112,7 @@
                             <p>${project.descr}</p>
                         </div>
                         <div>
-                            <a class="project-url" href=".${project.href}" data-collapse-trigger="collapseProjectFrame" target="projectFrame">Bezoeken</a>
+                            <a class="project-url" href="${project.href}" data-collapse-trigger="collapseProjectFrame" target="projectFrame">Bezoeken</a>
                         </div>
                     </article>
                 `
