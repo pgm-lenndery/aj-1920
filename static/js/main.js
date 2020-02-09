@@ -56,12 +56,17 @@
                 {
                     title: 'Case 1 Arne Quinze',
                     descr: 'Het namaken van arnequinze.com',
-                    href: '/at-work/01-case-1'
+                    href: 'https://git.ahs.lennertderyck.be/1920-atwork-1/'
                 },
                 {
                     title: 'Case 2 Matthias Talloen',
                     descr: 'Het namaken van https://matthiastalloen.be/',
-                    href: '/at-work/02-case-2'
+                    href: 'https://git.ahs.lennertderyck.be/1920-atwork-2/'
+                },
+                {
+                    title: 'Case 3 Establis',
+                    descr: 'Het namaken van https://establis.eu/ met 11ty',
+                    href: 'https://pgmgent-1920-students.github.io/case-3-establis-pgm-lenndery/'
                 },
             ]
         }
