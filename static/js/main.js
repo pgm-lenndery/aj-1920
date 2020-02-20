@@ -33,6 +33,12 @@
                     descr: 'Een literal object uitlezen en weergeven in DOM en details laden in overlay',
                     href: './webpgm/02-basic-js-dom'
                 },
+                {
+                    title: 'Tronald Dump API',
+                    descr: 'Leren omgaan met API\'s via XMLHttpRequest',
+                    href: 'https://git.lennertderyck.be/tweets-of-the-dumbest-living-thing/'
+                },
+                
             ]
         },
         {
