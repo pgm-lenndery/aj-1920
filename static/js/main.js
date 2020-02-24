@@ -38,7 +38,11 @@
                     descr: 'Leren omgaan met API\'s via XMLHttpRequest',
                     href: 'https://git.lennertderyck.be/tweets-of-the-dumbest-living-thing/'
                 },
-                
+                {
+                    title: 'The meal database',
+                    descr: 'Leren omgaan met API\'s via XMLHttpRequest en deze combineren',
+                    href: 'http://git.ahs.lennertderyck.be/recipes-api/'
+                }, 
             ]
         },
         {
