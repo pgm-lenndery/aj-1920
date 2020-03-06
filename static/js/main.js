@@ -46,7 +46,7 @@
                 {
                     title: 'Parkings Gent',
                     descr: 'Data consumeren vanuit API met async await',
-                    href: 'https://git.ahs.lennertderyck.be/recipes-api/'
+                    href: './webpgm/03-parkings'
                 }, 
             ]
         },
