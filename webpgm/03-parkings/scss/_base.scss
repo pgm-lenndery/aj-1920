@@ -1,0 +1,66 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    
+    body {
+        width: inherit;
+        height: inherit;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'FlandersArtSans';
+}
+
+.page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    
+    h1 {
+        position: relative;
+        width: fit-content;
+    }
+}
+
+
+#map {
+    width: 100vw;
+    height: 90%;
+    
+    .parkingSpot {
+        transition: all .3s ease;
+        
+        &:hover {
+            z-index: 1000000;
+            opacity: 1;
+        }
+        
+        .mapboxgl-popup-content {
+            padding: 0px;
+            
+            > a {
+                display: block;
+                padding: 16px;
+                text-decoration: none;
+                color: black;
+                
+        
+                .parkingSpot-title {
+                    letter-spacing: 1px;
+                    margin-bottom: 6px;
+                    // font-family: 'FlandersArtSerif';
+                }
+                
+                ul {
+                    list-style: none;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

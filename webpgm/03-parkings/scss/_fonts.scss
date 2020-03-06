@@ -1,0 +1,36 @@
+$baseUrl: '../fonts/';
+
+@font-face {
+    font-family: 'FlandersArtSerif';
+    src: url($baseUrl + 'FlandersArtSerif-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FlandersArtSerif';
+    src: url($baseUrl + 'FlandersArtSerif-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FlandersArtSans';
+    src: url($baseUrl + 'FlandersArtSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FlandersArtSans';
+    src: url($baseUrl + 'FlandersArtSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FlandersArtSerif';
+    src: url($baseUrl + 'FlandersArtSerif-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
