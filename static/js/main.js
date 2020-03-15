@@ -41,7 +41,7 @@
                 {
                     title: 'The meal database',
                     descr: 'Leren omgaan met API\'s via fetch en deze combineren',
-                    href: 'https://git.ahs.lennertderyck.be/recipes-api/'
+                    href: 'https://git.ahs.lennertderyck.be/1920-webpgm2-recipes-api/'
                 }, 
                 {
                     title: 'Parkings Gent',
@@ -66,7 +66,7 @@
                 {
                     title: 'Crowdfunding Lowki',
                     descr: 'Verdere uitwerking B007C4MP 2o2o project Lowki',
-                    href: 'https://pgmgent-1920-students.github.io/crowdfunding-pgm-lenndery/'
+                    href: 'https://pgmgent-1920-students.github.io/1920-uiux2-crowdfunding-pgm-lenndery/'
                 },
             ]
         },
@@ -86,7 +86,7 @@
                 {
                     title: 'Case 3 Establis',
                     descr: 'Het namaken van https://establis.eu/ met 11ty',
-                    href: 'https://pgmgent-1920-students.github.io/case-3-establis-pgm-lenndery/'
+                    href: 'https://atwork1-case-3-derycklennert.netlify.com/'
                 },
             ]
         }
