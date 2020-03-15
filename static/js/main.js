@@ -40,8 +40,13 @@
                 },
                 {
                     title: 'The meal database',
-                    descr: 'Leren omgaan met API\'s via XMLHttpRequest en deze combineren',
-                    href: 'http://git.ahs.lennertderyck.be/recipes-api/'
+                    descr: 'Leren omgaan met API\'s via fetch en deze combineren',
+                    href: 'https://git.ahs.lennertderyck.be/recipes-api/'
+                }, 
+                {
+                    title: 'Parkings Gent',
+                    descr: 'Data consumeren vanuit API met async await',
+                    href: './webpgm/03-parkings'
                 }, 
             ]
         },
@@ -57,6 +62,11 @@
                     title: 'Paralax',
                     descr: 'Gebruik maken van Javascript om paralax effect toe te voegen',
                     href: './uiux/03-paralax'
+                },
+                {
+                    title: 'Crowdfunding Lowki',
+                    descr: 'Verdere uitwerking B007C4MP 2o2o project Lowki',
+                    href: 'https://pgmgent-1920-students.github.io/crowdfunding-pgm-lenndery/'
                 },
             ]
         },
