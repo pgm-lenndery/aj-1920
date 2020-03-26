@@ -34,7 +34,7 @@
                     href: './webpgm/02-basic-js-dom'
                 },
                 {
-                    title: 'Tronald Dump API',
+                    title: 'Tronald Dump',
                     descr: 'Leren omgaan met API\'s via XMLHttpRequest',
                     href: 'https://git.lennertderyck.be/tweets-of-the-dumbest-living-thing/'
                 },
@@ -47,6 +47,11 @@
                     title: 'Parkings Gent',
                     descr: 'Data consumeren vanuit API met async await',
                     href: './webpgm/03-parkings'
+                }, 
+                {
+                    title: 'Quiz',
+                    descr: 'Examenwerkstuk – maakt gebruik van',
+                    href: 'https://webpgm2-exam.netlify.com/'
                 }, 
             ]
         },
