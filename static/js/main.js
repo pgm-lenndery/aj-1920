@@ -50,7 +50,7 @@
                 }, 
                 {
                     title: 'Quiz',
-                    descr: 'Examenwerkstuk – maakt gebruik van',
+                    descr: 'Examenwerkstuk – maakt gebruik van Open Trivia api',
                     href: 'https://webpgm2-exam.netlify.com/'
                 }, 
             ]
