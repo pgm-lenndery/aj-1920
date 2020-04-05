@@ -94,6 +94,16 @@
                     href: 'https://atwork1-case-3-derycklennert.netlify.com/'
                 },
             ]
+        },
+        {
+            title: 'Andere projecten',
+            projects:[
+                {
+                    title: 'copy.paste.ninja',
+                    descr: 'Verzameling van veelgebruikte code snippets, handig bij het coderen',
+                    href: 'https://copy.paste.ninja'
+                }
+            ]
         }
 
     ]
