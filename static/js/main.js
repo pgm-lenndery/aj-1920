@@ -53,6 +53,12 @@
                     descr: 'Examenwerkstuk – maakt gebruik van Open Trivia api',
                     href: 'https://webpgm2-exam.netlify.com/'
                 }, 
+                {
+                    title: 'Website opleiding Programmeren',
+                    descr: 'Een concept voor een website omtrent onze opleiding',
+                    href: 'https://git.ahs.lennertderyck.be/case1-pgm-website-pgm-lenndery/#/'
+                }, 
+                
             ]
         },
         {
@@ -96,6 +102,16 @@
             ]
         },
         {
+            title: 'Applied Information Technology',
+            projects:[
+                {
+                    title: 'Taptoe (Adobe XD)',
+                    descr: 'Jeugdlokalen eenvoudig huren en verhuren',
+                    href: 'https://xd.adobe.com/view/7148ffd0-d77d-43e7-95c7-02dbc1e23a31-241b/?fullscreen'
+                }
+            ]
+        },
+        {
             title: 'Andere projecten',
             projects:[
                 {
@@ -105,7 +121,6 @@
                 }
             ]
         }
-
     ]
 
     const app = {
